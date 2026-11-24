@@ -14,6 +14,10 @@ downloaded once, the first time it is used.
 No Python setup or separate ffmpeg install is needed. The macOS version uses
 the Apple GPU; the Windows and Linux packages use faster-whisper and run on the CPU.
 
+> **Downloads are temporarily unavailable.** The 1.1.1 packages did not yet
+> include the license texts and source offers required by some bundled
+> third-party components. A corrected release will follow.
+
 ## Install
 
 Download the file for your system from the [latest release](../../releases/latest).
