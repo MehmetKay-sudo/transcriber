@@ -5,7 +5,7 @@ The MIT license in `LICENSE` covers Transcriber's own code only.
 
 | Component | License | Source |
 |---|---|---|
-| Python 3.14 | PSF-2.0 | https://www.python.org |
+| Python 3.12 | PSF-2.0 | https://www.python.org |
 | Tcl/Tk 8.6 | Tcl/Tk license (BSD-style) | https://www.tcl-lang.org |
 | PyInstaller bootloader | GPL-2.0 with bootloader exception | https://pyinstaller.org |
 | faster-whisper 1.2.1 | MIT | https://github.com/SYSTRAN/faster-whisper |
@@ -27,6 +27,8 @@ The MIT license in `LICENSE` covers Transcriber's own code only.
 | anyio, h11, filelock, PyYAML, truststore | MIT | PyPI |
 | packaging | Apache-2.0 or BSD-2-Clause | PyPI |
 | typing_extensions | PSF-2.0 | PyPI |
+
+The Windows installer is built with Inno Setup (https://jrsoftware.org/isinfo.php).
 
 The macOS package additionally bundles:
 

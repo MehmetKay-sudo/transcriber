@@ -12,7 +12,7 @@ downloaded once, the first time it is used.
   from the recording's start timecode), SRT/VTT subtitles and PDF
 
 No Python setup or separate ffmpeg install is needed. The macOS version uses
-the Apple GPU; the Linux packages use faster-whisper and run on the CPU.
+the Apple GPU; the Windows and Linux packages use faster-whisper and run on the CPU.
 
 ## Install
 
@@ -24,6 +24,12 @@ Download the file for your system from the [latest release](../../releases/lates
 2. The app is not notarized by Apple, so the first start needs one extra step:
    in Applications, **right-click → Open**, then confirm **Open**. If macOS does
    not offer that: **System Settings → Privacy & Security → "Open Anyway"**.
+
+### Windows (10 and 11, 64-bit)
+
+1. Run `Transcriber-1.1.1-windows-x64-setup.exe`.
+2. The installer is not signed. If "Windows protected your PC" appears, click
+   **More info → Run anyway**.
 
 ### Linux (x86-64)
 
@@ -44,6 +50,8 @@ For the command line, use `whisper-transcriber --cli --help`.
 - If the language changes within a section, the other language comes out
   inaccurate.
 - The packages are not signed, and the macOS app is not notarized.
+- The Windows version passes the automatic test (it transcribes a test tone),
+  but has not yet been tried by hand on a real Windows PC.
 
 ## License
 
