@@ -1,6 +1,6 @@
 # Third-party components
 
-The Linux packages bundle the following components with their own licenses.
+The packages bundle the following components with their own licenses.
 The MIT license in `LICENSE` covers Transcriber's own code only.
 
 | Component | License | Source |
@@ -27,6 +27,19 @@ The MIT license in `LICENSE` covers Transcriber's own code only.
 | anyio, h11, filelock, PyYAML, truststore | MIT | PyPI |
 | packaging | Apache-2.0 or BSD-2-Clause | PyPI |
 | typing_extensions | PSF-2.0 | PyPI |
+
+The macOS package additionally bundles:
+
+| Component | License | Source |
+|---|---|---|
+| PyTorch 2.15.0 | BSD-3-Clause | https://github.com/pytorch/pytorch |
+| openai-whisper 20250625 | MIT | https://github.com/openai/whisper |
+| tiktoken 0.14.0 | MIT | https://github.com/openai/tiktoken |
+| numba 0.68.1, llvmlite 0.50.0 | BSD-2-Clause (llvmlite bundles LLVM: Apache-2.0 with LLVM exception) | https://numba.pydata.org |
+| regex 2026.11.23 | Apache-2.0 | https://github.com/mrabarnett/mrab-regex |
+| sympy 1.14.0, mpmath 1.3.0, networkx 3.7 | BSD-3-Clause | PyPI |
+| Jinja2 3.1.6, MarkupSafe 3.0.4 | BSD-3-Clause | PyPI |
+| more-itertools 11.2.1 | MIT | PyPI |
 
 The Whisper speech models are not bundled. They are downloaded on first use
 from Hugging Face and are published by OpenAI under the MIT license.

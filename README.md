@@ -11,12 +11,21 @@ downloaded once, the first time it is used.
 - Output: text with a timecode at least every 30 seconds (optionally in frames
   from the recording's start timecode), SRT/VTT subtitles and PDF
 
-The Linux packages use faster-whisper and run on the CPU. No GPU, Python setup
-or separate ffmpeg install is needed.
+No Python setup or separate ffmpeg install is needed. The macOS version uses
+the Apple GPU; the Linux packages use faster-whisper and run on the CPU.
 
-## Install (Linux, x86-64)
+## Install
 
-Download the package from the [latest release](../../releases/latest), then:
+Download the file for your system from the [latest release](../../releases/latest).
+
+### macOS (Apple Silicon, M1 and later, macOS 13 or newer)
+
+1. Open `Transcriber-1.1.1-macos-arm64.dmg` and drag Transcriber to Applications.
+2. The app is not notarized by Apple, so the first start needs one extra step:
+   in Applications, **right-click → Open**, then confirm **Open**. If macOS does
+   not offer that: **System Settings → Privacy & Security → "Open Anyway"**.
+
+### Linux (x86-64)
 
 | System | Command |
 |---|---|
@@ -34,7 +43,7 @@ For the command line, use `whisper-transcriber --cli --help`.
 - It does not tell speakers apart yet.
 - If the language changes within a section, the other language comes out
   inaccurate.
-- The packages are not signed.
+- The packages are not signed, and the macOS app is not notarized.
 
 ## License
 
